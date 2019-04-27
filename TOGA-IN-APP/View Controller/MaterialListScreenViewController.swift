@@ -18,7 +18,7 @@ class MaterialListScreen: UIViewController {
         super.viewDidLoad()
         
         materials = createArray()
-        print("a")
+        
         
     }
     

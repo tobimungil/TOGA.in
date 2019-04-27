@@ -17,7 +17,6 @@
 		C397B1AF2271CA2E00F7F7D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C397B1AD2271CA2E00F7F7D0 /* Main.storyboard */; };
 		C397B1B22271CA2E00F7F7D0 /* TOGA_IN_APP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C397B1B02271CA2E00F7F7D0 /* TOGA_IN_APP.xcdatamodeld */; };
 		C397B1B42271CA2E00F7F7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C397B1B32271CA2E00F7F7D0 /* Assets.xcassets */; };
-		C397B1B72271CA2E00F7F7D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C397B1B52271CA2E00F7F7D0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 		C397B1AE2271CA2E00F7F7D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C397B1B12271CA2E00F7F7D0 /* TOGA_IN_APP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TOGA_IN_APP.xcdatamodel; sourceTree = "<group>"; };
 		C397B1B32271CA2E00F7F7D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C397B1B62271CA2E00F7F7D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C397B1B82271CA2E00F7F7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +45,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E89665222745E3C0029EB2A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5EA979E5227304830032B27F /* Material.swift */,
+				5EA979F32273F2AA0032B27F /* Resep.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		5E89665322745E580029EB2A /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5EA979E12272F9A20032B27F /* MaterialListScreenViewController.swift */,
+				5EA979EF2273EE7A0032B27F /* ResepListScreen.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		5E89665422745E7F0029EB2A /* Isi UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				5EA979E3227302200032B27F /* MaterialCell.swift */,
+				5EA979F12273F1120032B27F /* ResepCell.swift */,
+			);
+			path = "Isi UITableView";
+			sourceTree = "<group>";
+		};
 		C397B19D2271CA2E00F7F7D0 = {
 			isa = PBXGroup;
 			children = (
@@ -67,15 +92,11 @@
 			isa = PBXGroup;
 			children = (
 				C397B1A92271CA2E00F7F7D0 /* AppDelegate.swift */,
-				5EA979E12272F9A20032B27F /* MaterialListScreenViewController.swift */,
-				5EA979E3227302200032B27F /* MaterialCell.swift */,
-				5EA979E5227304830032B27F /* Material.swift */,
 				C397B1AD2271CA2E00F7F7D0 /* Main.storyboard */,
-				5EA979F32273F2AA0032B27F /* Resep.swift */,
-				5EA979F12273F1120032B27F /* ResepCell.swift */,
-				5EA979EF2273EE7A0032B27F /* ResepListScreen.swift */,
+				5E89665222745E3C0029EB2A /* Class */,
+				5E89665422745E7F0029EB2A /* Isi UITableView */,
+				5E89665322745E580029EB2A /* View Controller */,
 				C397B1B32271CA2E00F7F7D0 /* Assets.xcassets */,
-				C397B1B52271CA2E00F7F7D0 /* LaunchScreen.storyboard */,
 				C397B1B82271CA2E00F7F7D0 /* Info.plist */,
 				C397B1B02271CA2E00F7F7D0 /* TOGA_IN_APP.xcdatamodeld */,
 			);
@@ -140,7 +161,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C397B1B72271CA2E00F7F7D0 /* LaunchScreen.storyboard in Resources */,
 				C397B1B42271CA2E00F7F7D0 /* Assets.xcassets in Resources */,
 				C397B1AF2271CA2E00F7F7D0 /* Main.storyboard in Resources */,
 			);
@@ -173,14 +193,6 @@
 				C397B1AE2271CA2E00F7F7D0 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C397B1B52271CA2E00F7F7D0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C397B1B62271CA2E00F7F7D0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
