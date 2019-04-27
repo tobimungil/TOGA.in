@@ -18,9 +18,6 @@
 		C397B1B22271CA2E00F7F7D0 /* TOGA_IN_APP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C397B1B02271CA2E00F7F7D0 /* TOGA_IN_APP.xcdatamodeld */; };
 		C397B1B42271CA2E00F7F7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C397B1B32271CA2E00F7F7D0 /* Assets.xcassets */; };
 		C397B1B72271CA2E00F7F7D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C397B1B52271CA2E00F7F7D0 /* LaunchScreen.storyboard */; };
-		C3C0D0BD22733CE400E7DC44 /* SF Compact in Resources */ = {isa = PBXBuildFile; fileRef = C3C0D0BA22733CE400E7DC44 /* SF Compact */; };
-		C3C0D0BE22733CE400E7DC44 /* SF Pro in Resources */ = {isa = PBXBuildFile; fileRef = C3C0D0BB22733CE400E7DC44 /* SF Pro */; };
-		C3C0D0BF22733CE400E7DC44 /* SF Compact Rounded in Resources */ = {isa = PBXBuildFile; fileRef = C3C0D0BC22733CE400E7DC44 /* SF Compact Rounded */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +34,6 @@
 		C397B1B32271CA2E00F7F7D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C397B1B62271CA2E00F7F7D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C397B1B82271CA2E00F7F7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3C0D0BA22733CE400E7DC44 /* SF Compact */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "SF Compact"; path = "../../../Desktop/SF Compact"; sourceTree = "<group>"; };
-		C3C0D0BB22733CE400E7DC44 /* SF Pro */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "SF Pro"; path = "../../../Desktop/SF Pro"; sourceTree = "<group>"; };
-		C3C0D0BC22733CE400E7DC44 /* SF Compact Rounded */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "SF Compact Rounded"; path = "../../../Desktop/SF Compact Rounded"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +74,6 @@
 				5EA979F32273F2AA0032B27F /* Resep.swift */,
 				5EA979F12273F1120032B27F /* ResepCell.swift */,
 				5EA979EF2273EE7A0032B27F /* ResepListScreen.swift */,
-				C3C0D0BA22733CE400E7DC44 /* SF Compact */,
-				C3C0D0BC22733CE400E7DC44 /* SF Compact Rounded */,
-				C3C0D0BB22733CE400E7DC44 /* SF Pro */,
 				C397B1B32271CA2E00F7F7D0 /* Assets.xcassets */,
 				C397B1B52271CA2E00F7F7D0 /* LaunchScreen.storyboard */,
 				C397B1B82271CA2E00F7F7D0 /* Info.plist */,
@@ -149,11 +140,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3C0D0BE22733CE400E7DC44 /* SF Pro in Resources */,
 				C397B1B72271CA2E00F7F7D0 /* LaunchScreen.storyboard in Resources */,
 				C397B1B42271CA2E00F7F7D0 /* Assets.xcassets in Resources */,
-				C3C0D0BF22733CE400E7DC44 /* SF Compact Rounded in Resources */,
-				C3C0D0BD22733CE400E7DC44 /* SF Compact in Resources */,
 				C397B1AF2271CA2E00F7F7D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
