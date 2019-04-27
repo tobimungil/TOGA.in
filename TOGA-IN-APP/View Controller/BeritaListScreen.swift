@@ -12,6 +12,7 @@ class BeritaListScreen: UIViewController {
 
     
     @IBOutlet weak var tableView: UITableView!
+    var sections: [String] = ["Berita Populer","Berita Terbaru"]
     var beritas: [Berita] = []
     
     override func viewDidLoad() {
@@ -43,8 +44,21 @@ class BeritaListScreen: UIViewController {
 }
 
 extension BeritaListScreen: UITableViewDataSource, UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return self.sections[section]
+        
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.sections.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return beritas.count
+        if section == 0{
+            return 1
+        }
+       return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
