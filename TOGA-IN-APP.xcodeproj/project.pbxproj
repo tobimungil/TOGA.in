@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E896656227465130029EB2A /* BeritaListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E896655227465130029EB2A /* BeritaListScreen.swift */; };
+		5E896658227465580029EB2A /* BeritaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E896657227465580029EB2A /* BeritaCell.swift */; };
+		5E89665A2274665B0029EB2A /* Berita.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8966592274665B0029EB2A /* Berita.swift */; };
 		5EA979E22272F9A20032B27F /* MaterialListScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA979E12272F9A20032B27F /* MaterialListScreenViewController.swift */; };
 		5EA979E4227302200032B27F /* MaterialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA979E3227302200032B27F /* MaterialCell.swift */; };
 		5EA979E6227304830032B27F /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA979E5227304830032B27F /* Material.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E896655227465130029EB2A /* BeritaListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaListScreen.swift; sourceTree = "<group>"; };
+		5E896657227465580029EB2A /* BeritaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaCell.swift; sourceTree = "<group>"; };
+		5E8966592274665B0029EB2A /* Berita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Berita.swift; sourceTree = "<group>"; };
 		5EA979E12272F9A20032B27F /* MaterialListScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialListScreenViewController.swift; sourceTree = "<group>"; };
 		5EA979E3227302200032B27F /* MaterialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCell.swift; sourceTree = "<group>"; };
 		5EA979E5227304830032B27F /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
@@ -48,6 +54,7 @@
 		5E89665222745E3C0029EB2A /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				5E8966592274665B0029EB2A /* Berita.swift */,
 				5EA979E5227304830032B27F /* Material.swift */,
 				5EA979F32273F2AA0032B27F /* Resep.swift */,
 			);
@@ -57,6 +64,7 @@
 		5E89665322745E580029EB2A /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5E896655227465130029EB2A /* BeritaListScreen.swift */,
 				5EA979E12272F9A20032B27F /* MaterialListScreenViewController.swift */,
 				5EA979EF2273EE7A0032B27F /* ResepListScreen.swift */,
 			);
@@ -67,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				5EA979E3227302200032B27F /* MaterialCell.swift */,
+				5E896657227465580029EB2A /* BeritaCell.swift */,
 				5EA979F12273F1120032B27F /* ResepCell.swift */,
 			);
 			path = "Isi UITableView";
@@ -177,8 +186,11 @@
 				5EA979F22273F1120032B27F /* ResepCell.swift in Sources */,
 				5EA979E4227302200032B27F /* MaterialCell.swift in Sources */,
 				C397B1B22271CA2E00F7F7D0 /* TOGA_IN_APP.xcdatamodeld in Sources */,
+				5E89665A2274665B0029EB2A /* Berita.swift in Sources */,
+				5E896658227465580029EB2A /* BeritaCell.swift in Sources */,
 				C397B1AA2271CA2E00F7F7D0 /* AppDelegate.swift in Sources */,
 				5EA979F42273F2AA0032B27F /* Resep.swift in Sources */,
+				5E896656227465130029EB2A /* BeritaListScreen.swift in Sources */,
 				5EA979E22272F9A20032B27F /* MaterialListScreenViewController.swift in Sources */,
 				5EA979F02273EE7A0032B27F /* ResepListScreen.swift in Sources */,
 			);
