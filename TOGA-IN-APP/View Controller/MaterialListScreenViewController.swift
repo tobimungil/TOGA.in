@@ -77,7 +77,7 @@ extension MaterialListScreen: UISearchBarDelegate{
         })
         tableView.reloadData()
     }
-    }
+}
 
 
 
