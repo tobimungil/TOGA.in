@@ -596,23 +596,20 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/ 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7m-BS-Rn3">
-                                                    <rect key="frame" x="107" y="52" width="20" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bintang" translatesAutoresizingMaskIntoConstraints="NO" id="Lbp-oV-fQt">
-                                                    <rect key="frame" x="133" y="56" width="14" height="13"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hatipreview" translatesAutoresizingMaskIntoConstraints="NO" id="Lbp-oV-fQt">
+                                                    <rect key="frame" x="107" y="57" width="14" height="13"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1m-jV-FtO">
+                                                    <rect key="frame" x="330" y="8" width="35" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="IconHati-Disabled"/>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="bintangResep" destination="Lbp-oV-fQt" id="aQj-xB-HSr"/>
                                             <outlet property="ratingAsliResep" destination="szk-wX-uvc" id="JTb-ai-jPY"/>
-                                            <outlet property="ratingDari5Resep" destination="V7m-BS-Rn3" id="LMV-jB-wDX"/>
                                             <outlet property="resepGambar" destination="JS0-r4-OhN" id="UHG-N7-K7d"/>
                                             <outlet property="resepKontributor" destination="dm2-fx-CTO" id="59V-DT-An3"/>
                                             <outlet property="resepNama" destination="Mnc-aW-jSH" id="yel-pz-75I"/>
@@ -1016,9 +1013,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Hatipreview" width="44" height="44"/>
         <image name="IconBerita" width="44" height="44"/>
         <image name="IconBerita-Disabled" width="44" height="44"/>
         <image name="IconCancel" width="44" height="44"/>
+        <image name="IconHati-Disabled" width="35" height="32"/>
         <image name="IconProfile" width="44" height="44"/>
         <image name="IconProfile-Disabled" width="44" height="44"/>
         <image name="IconResep" width="44" height="44"/>
@@ -1030,7 +1029,6 @@
         <image name="IconTanaman" width="44" height="44"/>
         <image name="IconTanaman-Disabled" width="44" height="44"/>
         <image name="LOGO-TOG" width="237" height="101"/>
-        <image name="bintang" width="14" height="13"/>
         <image name="logo-splash" width="181" height="254"/>
         <image name="thumbnailBerita" width="312" height="274"/>
         <image name="thumbnailTanaman" width="171" height="228"/>

@@ -25,9 +25,22 @@ class ResepListScreen: UIViewController {
     
     func createArray() -> [Resep]{
         
-        let resep1 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Batuk Alami", contributor: "Charlie Chaplin", ratingAsli: "4", ratingDari5: "/ 5", bintang: #imageLiteral(resourceName: "bintang"))
+        let resep1 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Batuk Alami", contributor: "Charlie Chaplin", ratingAsli: "11", bintang: #imageLiteral(resourceName: "Hatipreview"))
+        let resep2 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Batuk Alami", contributor: "Charlie Chaplin", ratingAsli: "8", bintang: #imageLiteral(resourceName: "Hatipreview"))
+        let resep3 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Batuk Alami", contributor: "Charlie Chaplin", ratingAsli: "4", bintang: #imageLiteral(resourceName: "Hatipreview"))
+        let resep4 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Batuk Alami", contributor: "Charlie Chaplin", ratingAsli: "4", bintang: #imageLiteral(resourceName: "Hatipreview"))
+        let resep5 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Batuk Alami", contributor: "Charlie Chaplin", ratingAsli: "4", bintang: #imageLiteral(resourceName: "Hatipreview"))
+        let resep6 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Batuk Alami", contributor: "Charlie Chaplin", ratingAsli: "4", bintang: #imageLiteral(resourceName: "Hatipreview"))
+        let resep7 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Batuk Alami", contributor: "Charlie Chaplin", ratingAsli: "4", bintang: #imageLiteral(resourceName: "Hatipreview"))
+        
         
         reseps.append(resep1)
+        reseps.append(resep2)
+        reseps.append(resep3)
+        reseps.append(resep4)
+        reseps.append(resep5)
+        reseps.append(resep6)
+        reseps.append(resep7)
         
         searchResep = reseps
         
