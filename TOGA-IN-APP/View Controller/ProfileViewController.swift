@@ -14,6 +14,8 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.navigationBar.shadowImage = UIImage()
 
         // Do any additional setup after loading the view.
     }
@@ -34,7 +36,6 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         let namaTanamanObat: String = namaTanaman[indexPath.row]
         
         let viewController = storyboard?.instantiateViewController(withIdentifier: namaTanamanObat)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.pushViewController(viewController!, animated: true)
         print("Di Tekan Index yang ke \(namaTanamanObat)")
         
