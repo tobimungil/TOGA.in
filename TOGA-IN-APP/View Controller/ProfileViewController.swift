@@ -10,18 +10,16 @@ import UIKit
 
 class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    var namaTanaman: [String] = ["Jahe"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
-    }
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return namaTanaman.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -30,6 +28,16 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProfileCollectionViewCell", for: indexPath) as! ProfieCollectionViewCell
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let namaTanamanObat: String = namaTanaman[indexPath.row]
+        
+        let viewController = storyboard?.instantiateViewController(withIdentifier: namaTanamanObat)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.pushViewController(viewController!, animated: true)
+        print("Di Tekan Index yang ke \(namaTanamanObat)")
+        
     }
     
 
