@@ -10,12 +10,13 @@ import UIKit
 
 class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    var namaTanaman: [String] = ["Jahe"]
+    var namaTanaman: [String] = ["Jahe","Temulawak","Cabe","Pete","Jengkol"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationController?.navigationBar.shadowImage = UIImage()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -35,8 +36,11 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let namaTanamanObat: String = namaTanaman[indexPath.row]
         
-        let viewController = storyboard?.instantiateViewController(withIdentifier: namaTanamanObat)
-        self.navigationController?.pushViewController(viewController!, animated: true)
+        let viewController = storyboard?.instantiateViewController(withIdentifier: "Jahe") as! PassingDataViewController
+        
+        viewController.name = namaTanamanObat
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
         print("Di Tekan Index yang ke \(namaTanamanObat)")
         
     }

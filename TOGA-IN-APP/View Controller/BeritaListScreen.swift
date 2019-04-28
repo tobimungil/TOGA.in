@@ -68,4 +68,8 @@ extension BeritaListScreen: UITableViewDataSource, UITableViewDelegate{
         cell.setBerita(berita: berita)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
+    }
 }
