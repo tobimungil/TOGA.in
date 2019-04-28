@@ -21,12 +21,12 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Beranda-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TOGA_IN_APP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="TOGA_IN_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dxk-ok-3Ad">
@@ -68,25 +68,69 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueX-y9-l6a">
-                                <rect key="frame" x="16" y="264" width="177" height="228"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="thumbnailTanaman"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gw-q4-KWg">
                                 <rect key="frame" x="16" y="572" width="366" height="274"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="thumbnailBerita"/>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YtD-UD-9IS">
+                                <rect key="frame" x="16" y="263" width="378" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0d1-dm-v19">
+                                    <size key="itemSize" width="171" height="242"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="identTanaman" id="bcR-Ap-iJC" customClass="HomeCollectionViewCell" customModule="TOGA_IN_APP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="10.5" width="171" height="242"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="171" height="242"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3D0-Xo-4NC">
+                                                    <rect key="frame" x="0.0" y="-3" width="171" height="242"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nfO-wv-uam">
+                                                    <rect key="frame" x="0.0" y="170" width="171" height="72"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FV0-fs-ic1">
+                                                            <rect key="frame" x="32" y="15" width="107" height="41"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="imgTanaman" destination="3D0-Xo-4NC" id="g4M-hv-Wth"/>
+                                            <outlet property="lblTanaman" destination="FV0-fs-ic1" id="HeS-Cx-Fxv"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="yZb-ND-9pC"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1xv-Tc-8ba"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Beranda" image="IconRumah-Disabled" selectedImage="IconRumah" id="D3o-8S-cr5"/>
+                    <navigationItem key="navigationItem" id="eff-e1-m3g"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1852.1739130434785" y="116.51785714285714"/>
+            <point key="canvasLocation" x="2762.3188405797105" y="116.51785714285714"/>
         </scene>
         <!--Material-->
         <scene sceneID="lUk-am-Nke">
@@ -179,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ed-8k-hvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2628.985507246377" y="116.51785714285714"/>
+            <point key="canvasLocation" x="3539.130434782609" y="116.51785714285714"/>
         </scene>
         <!--Berita-->
         <scene sceneID="Qtc-db-R4a">
@@ -250,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HNh-vW-Uah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4060.8695652173915" y="116.51785714285714"/>
+            <point key="canvasLocation" x="4971.0144927536239" y="116.51785714285714"/>
         </scene>
         <!--Profil-->
         <scene sceneID="7QP-ei-cN8">
@@ -343,7 +387,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCl-6s-CFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4786.9565217391309" y="116.51785714285714"/>
+            <point key="canvasLocation" x="5697.1014492753629" y="116.51785714285714"/>
         </scene>
         <!--Register-->
         <scene sceneID="4EE-Kg-PmR">
@@ -517,7 +561,7 @@
                         <color key="selectedImageTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Ug3-00-lIN"/>
+                        <segue destination="8wo-Xq-Ih6" kind="relationship" relationship="viewControllers" id="Ug3-00-lIN"/>
                         <segue destination="0fj-Ia-feg" kind="relationship" relationship="viewControllers" id="X17-uq-Snl"/>
                         <segue destination="AY3-Ui-6UP" kind="relationship" relationship="viewControllers" id="bQ0-0y-Cg6"/>
                         <segue destination="pCd-AS-o3m" kind="relationship" relationship="viewControllers" id="yIz-eL-9Fh"/>
@@ -636,7 +680,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nAS-ZL-6jD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3355.072463768116" y="116.51785714285714"/>
+            <point key="canvasLocation" x="4265.217391304348" y="116.51785714285714"/>
         </scene>
         <!--Profile View Controller Scene-->
         <scene sceneID="Zol-Q6-gLS">
@@ -848,7 +892,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQt-En-Af3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8057.971014492754" y="130.58035714285714"/>
+            <point key="canvasLocation" x="8968.115942028986" y="130.58035714285714"/>
         </scene>
         <!--Passing Data View Controller-->
         <scene sceneID="GLM-pG-ENh">
@@ -875,12 +919,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r7y-oi-5B7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8924.6376811594218" y="130.58035714285714"/>
+            <point key="canvasLocation" x="9834.7826086956538" y="130.58035714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Tanaman View Controller-->
         <scene sceneID="vJK-ib-Zd3">
             <objects>
-                <viewController id="Yj7-eH-haZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailTanamanViewController" id="Yj7-eH-haZ" customClass="DetailTanamanViewController" customModule="TOGA_IN_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q28-Qw-6XZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1182"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -988,6 +1032,9 @@
                         <viewLayoutGuide key="safeArea" id="jjs-zD-PFu"/>
                     </view>
                     <size key="freeformSize" width="414" height="1182"/>
+                    <connections>
+                        <outlet property="lblJudul" destination="Etm-8L-5JD" id="h41-cm-egf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RKu-VK-PPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1012,7 +1059,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMp-qy-XX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7147.826086956522" y="130.58035714285714"/>
+            <point key="canvasLocation" x="8057.971014492754" y="130.58035714285714"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="41g-eO-rth">
@@ -1215,6 +1262,26 @@
             </objects>
             <point key="canvasLocation" x="2628.985507246377" y="2130.8035714285716"/>
         </scene>
+        <!--Beranda-->
+        <scene sceneID="8MH-89-OVp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8wo-Xq-Ih6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Beranda" image="IconRumah-Disabled" selectedImage="IconRumah" id="D3o-8S-cr5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="dd0-gv-Y2O">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.46286821365356445" green="0.77968555688858032" blue="0.47838211059570312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Qhk-XJ-GHX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rN5-ns-M3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852.1739130434785" y="116.51785714285714"/>
+        </scene>
     </scenes>
     <resources>
         <image name="IconBerita" width="44" height="44"/>
@@ -1234,10 +1301,9 @@
         <image name="bintang" width="14" height="13"/>
         <image name="logo-splash" width="181" height="254"/>
         <image name="thumbnailBerita" width="312" height="274"/>
-        <image name="thumbnailTanaman" width="171" height="228"/>
         <image name="tombolBack" width="19" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pcP-mA-PFb"/>
+        <segue reference="34m-dj-dUv"/>
     </inferredMetricsTieBreakers>
 </document>
