@@ -15,16 +15,14 @@ class Resep{
     var title: String
     var contributor: String
     var ratingAsli: String
-    var ratingDari5: String
     var bintang: UIImage
     
-    init(image: UIImage, title: String, contributor: String, ratingAsli: String, ratingDari5: String, bintang: UIImage){
+    init(image: UIImage, title: String, contributor: String, ratingAsli: String, bintang: UIImage){
         
         self.image = image
         self.title = title
         self.contributor = contributor
         self.ratingAsli = ratingAsli
-        self.ratingDari5 = ratingDari5
         self.bintang = bintang
     }
 }
