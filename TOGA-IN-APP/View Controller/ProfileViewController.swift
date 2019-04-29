@@ -17,9 +17,12 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         navigationController?.navigationBar.shadowImage = UIImage()
         
+        
+        
 
         // Do any additional setup after loading the view.
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return namaTanaman.count
@@ -34,6 +37,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
         let namaTanamanObat: String = namaTanaman[indexPath.row]
         
         let viewController = storyboard?.instantiateViewController(withIdentifier: "Jahe") as! PassingDataViewController

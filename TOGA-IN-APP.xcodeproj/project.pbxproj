@@ -20,6 +20,7 @@
 		C34A128822756F89005444AE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A128722756F89005444AE /* ProfileViewController.swift */; };
 		C34A128A22756FB4005444AE /* ProfieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A128922756FB4005444AE /* ProfieCollectionViewCell.swift */; };
 		C34A128C227589B9005444AE /* PassingDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A128B227589B9005444AE /* PassingDataViewController.swift */; };
+		C34A128E2275CDA5005444AE /* DetailBeritaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A128D2275CDA5005444AE /* DetailBeritaViewController.swift */; };
 		C397B1AA2271CA2E00F7F7D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C397B1A92271CA2E00F7F7D0 /* AppDelegate.swift */; };
 		C397B1AF2271CA2E00F7F7D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C397B1AD2271CA2E00F7F7D0 /* Main.storyboard */; };
 		C397B1B22271CA2E00F7F7D0 /* TOGA_IN_APP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C397B1B02271CA2E00F7F7D0 /* TOGA_IN_APP.xcdatamodeld */; };
@@ -40,6 +41,7 @@
 		C34A128722756F89005444AE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C34A128922756FB4005444AE /* ProfieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfieCollectionViewCell.swift; sourceTree = "<group>"; };
 		C34A128B227589B9005444AE /* PassingDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassingDataViewController.swift; sourceTree = "<group>"; };
+		C34A128D2275CDA5005444AE /* DetailBeritaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBeritaViewController.swift; sourceTree = "<group>"; };
 		C397B1A62271CA2E00F7F7D0 /* TOGA-IN-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TOGA-IN-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C397B1A92271CA2E00F7F7D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C397B1AE2271CA2E00F7F7D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				5EA979EF2273EE7A0032B27F /* ResepListScreen.swift */,
 				C34A128722756F89005444AE /* ProfileViewController.swift */,
 				C34A128B227589B9005444AE /* PassingDataViewController.swift */,
+				C34A128D2275CDA5005444AE /* DetailBeritaViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C34A128C227589B9005444AE /* PassingDataViewController.swift in Sources */,
+				C34A128E2275CDA5005444AE /* DetailBeritaViewController.swift in Sources */,
 				5EA979E6227304830032B27F /* Material.swift in Sources */,
 				5EA979F22273F1120032B27F /* ResepCell.swift in Sources */,
 				5EA979E4227302200032B27F /* MaterialCell.swift in Sources */,
@@ -347,7 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q67V59ZZGA;
+				DEVELOPMENT_TEAM = MTU6Z4VFLV;
 				INFOPLIST_FILE = "TOGA-IN-APP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -365,7 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q67V59ZZGA;
+				DEVELOPMENT_TEAM = MTU6Z4VFLV;
 				INFOPLIST_FILE = "TOGA-IN-APP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
